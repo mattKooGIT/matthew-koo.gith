@@ -4,19 +4,49 @@
         <meta charset = "UTF-8"/>
         <title>ITM780 Lab 2</title>
         <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
     </head>
     <body>
         <h1>Matthew Koo</h1>
+<!--image-->
+        <div id="myImage" class="image">
+            <img onclick="enlarge" id="profilePic" src="public_html/_DSC1365.jpeg" alt="Click To Enlarge" style="cursor:pointer">
+        </div>
+
+<!--modal for enlarged image-->
+        <div id="imageModal" class="modal">
+            <img class="modal-content" id="enlargedImage">
+        </div>
+
+<!--navigation bar-->
+    <nav class="navbar">
+        <div class="dropdown">
+            <button onclick="dropdownMenu()" class="dropdown-btn">Social Media</button>
+            <div class="dropdown-content" id="dropdownMenu">
+                <a href="https://www.instagram.com/mkoo.04/" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in/mattkoo/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <a href="https://github.com/mattKooGIT" target="_blank">Github</a>
+        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/" target="_blank">My Program</a>
+    </nav>
         <hr>
+
+<!--user input button-->
+    <div class="button">
+        <button onclick="namePrompt()">Click Me</button>
+    </div>
+    <div id="nameOutput"></div>
+
     <div class="text">
         <h2><u>Education</u></h2>
         <ul>
             <li><i><b>North Toronto Christian School (2007-2022)</b></i></li>
             <li><i><b>Toronto Metropolitan University (2022-2027)</b></i></li>
             <i>Program: Business Technology Management</i>
-            
         </ul>
     </div>
+
     <div class="text">
         <h2><u>Courses</u></h2>
         <table>
