@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Matthew Koo's Portfolio - Contact Me</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="survey.js"></script>
+    </head>
+    <body id="form">
+        
+        <form id="myForm">
+            <div id="headingform">
+                <h1>Viewer Survey</h1>
+            </div>
+            <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                <label for="fname">First Name:</label>
+                <input id="firstname" type="text">
+            </p>
+            <p>
+                <label for="lname">Last Name:</label>
+                <input id="lastname" type="text">
+            </p>
+            <p>
+                <label for="emailname">Email:</label>
+                <input id="email" type="email" size="30">
+            </p>
+            </fieldset>
+            <!--datalist-->
+            <p>
+                <label>What is your primary reason for visiting my website?</label>
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Evaluation Purposes">
+                    <option value="Research">
+                    <option value="Learning">
+                    <option value="Just Browsing">
+                    <option value="Other">
+                </datalist>
+            </p>
+            <!--school dropdown-->
+            <p>
+                <label>What post-secondary school do you currently attend?</label>
+                <select id="school" name="school">
+                    <option value="ryerson">TMU/Ryerson</option>
+                    <option value="uoft">University of Toronto</option>
+                    <option value="mcmaster">McMaster University</option>
+                    <option value="laurier">Wilfred Laurier University</option>
+                    <option value="queens">Queen's University</option>
+                    <option value="waterloo">University of Waterloo</option>
+                    <option value="western">Western University</option>
+                    <option value="n/a">Not attending post-secondary school</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <p>
+                <label for="other">If you selected "Other", please enter what post-secondary school you're attending:</label>
+                <input id="other" type="text" size="30">
+            </p>
+            <!--radio website-->
+            
+                <label>How did you find this website?</label>
+                <div>
+                    <input name="discovery" type="radio" id="ig" value="instagram">
+                    <label for="discovery">Instagram</label>
+                </div>
+                <div>
+                    <input name="discovery" type="radio" id="linkedin" value="LinkedIn">
+                    <label for="discovery">LinkedIn</label>
+                </div>
+                <div>
+                    <input name="discovery" type="radio" id="friend" value="friend">
+                    <label for="discovery">Family, Friend, or Colleague</label>
+                </div>
+                <div>
+                    <input name="discovery" type="radio" id="gh" value="github">
+                    <label for="discovery">GitHub Community</label>
+                </div>
+                <div>
+                    <input name="discovery" type="radio" id="other" value="other">
+                    <label for="discovery">Other</label>
+                </div>
+            </p>
+            <p>
+                <label for="other">If you selected "Other", please enter where you found this website:</label>
+                <input id="other" type="text" size="">
+            </p>
+            <!--checkbox-->
+            <p>
+                <label>Which section(s) of my website interested you the most? (Select multiple if needed)</label>
+                <div>
+                    <input type="checkbox" id="Education" name="Education">
+                    <label for="Education">Education</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="courses" name="Courses">
+                    <label for="Courses">Courses</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="helpful" name="helpful">
+                    <label for="helpful">Most Helpful Course</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Awards" name="Awards">
+                    <label for="Awards">Awards</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="extra" name="extra">
+                    <label for="extra">Extracurriculars</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sm" name="sm">
+                    <label for="sm">Social Media</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="git" name="git">
+                    <label for="git">GitHub</label>
+                </div>
+            </p>
+            <!--text area-->
+            <p>
+                <label>What is something you would like to see added to the website?</label>
+                <textarea name="message" rows="8" cols="40">
+                </textarea>
+            </p>
+            <!-- Submit and Reset Buttons -->
+            <p>
+                <!--Submit Button-->
+                <button type="submit" onclick="retrieve()">Submit</button>
+                <!--Reset Button-->
+                <button type="reset" onclick="reset()">Clear</button>
+            </p>
+        </form>
+    </body>
+</html>
