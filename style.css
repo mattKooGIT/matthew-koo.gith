@@ -161,7 +161,7 @@ img {
 }
 
 /*survey css*/
-#form {
+#form{
     background-color: #15222E;
     color: #FFF8E8;
     font-family: Arial, sans-serif;
@@ -176,7 +176,7 @@ img {
     justify-content: center;
 }
 
-#myForm {
+#myForm{
     background-color: #1C2E3A;
     padding: 13px 30px 13px 15px;
     border-radius: 10px;
@@ -185,13 +185,13 @@ img {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     display: center;
 }
-fieldset {
+fieldset{
     padding-right: 30px;
     margin-left: 17px;
     border-radius: 10px;
 }
 
-legend {
+legend{
     font-size: 1.2em;
     color: #FFF8E8;
     font-weight: 600;
@@ -208,7 +208,7 @@ label{
 input[type="text"],
 input[type="email"],
 select,
-textarea {
+textarea{
     width: 100%;
     padding: 0.5em;
     margin: 0.5em 0 1em ;
@@ -219,16 +219,16 @@ textarea {
 }
 
 input[type="radio"],
-input[type="checkbox"] {
+input[type="checkbox"]{
     margin-right: 0.5em;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus, select:focus, textarea:focus{
     outline: 2px solid #FFF8E8;
 }
 
 button[type="submit"],
-button[type="reset"] {
+button[type="reset"]{
     background-color: #FFF8E8;
     color: #15222E;
     border: none;
@@ -241,25 +241,25 @@ button[type="reset"] {
 }
 
 button[type="submit"]:hover,
-button[type="reset"]:hover {
+button[type="reset"]:hover{
     background-color: #e6dfd3;
 }
 
-button[type="reset"] {
+button[type="reset"]{
     background-color: #3A5063;
     color: #FFF8E8;
 }
 
-button[type="reset"]:hover {
+button[type="reset"]:hover{
     background-color: #4d6277;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px){
     form {
         padding: 15px;
     }
     button[type="submit"],
-    button[type="reset"] {
+    button[type="reset"]{
         width: 100%;
         margin: 5px 0;
     }
